@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/TUF__DSA/Step1/Lec4",
-      "program": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/TUF__DSA/Step1/Lec4/build/Debug/outDebug",
+      "cwd": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/TUF__DSA/Step3/Lec2_Med/3.1",
+      "program": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/TUF__DSA/Step3/Lec2_Med/3.1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
