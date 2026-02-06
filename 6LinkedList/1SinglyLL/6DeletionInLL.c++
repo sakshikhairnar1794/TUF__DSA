@@ -49,6 +49,66 @@ Node *DeletefromllTail(Node *head)
     temp->next = NULL;
     return head;
 }
+Node *DeletefromK(Node *head, int k)
+{
+    if (head == NULL)
+    {
+        return head;
+    }
+    if (k == 1)
+    {
+        Node *temp = head;
+        head = head->next;
+        delete temp;
+        return head;
+    }
+    Node *prev = NULL;
+    Node *temp = head;
+    int cnt = 0;
+    while (temp != NULL)
+    {
+        cnt++;
+        if (cnt == k)
+        {
+            prev->next = prev->next->next;
+            delete temp;
+            break;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    return head;
+}
+Node *DeletefromVal(Node *head, int el)
+{
+    if (head == NULL)
+    {
+        return head;
+    }
+    if (head->data == el)
+    {
+        Node *temp = head;
+        head = head->next;
+        delete temp;
+        return head;
+    }
+    Node *prev = NULL;
+    Node *temp = head;
+
+    while (temp != NULL)
+    {
+
+        if (temp->data == el)
+        {
+            prev->next = prev->next->next;
+            delete temp;
+            break;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    return head;
+}
 void traverseLL(Node *head)
 {
     Node *temp = head;
@@ -64,5 +124,7 @@ int main()
     Node *head = convertArr2LL(arr);
     head = Deletefromllhead(head);
     head = DeletefromllTail(head);
+    head = DeletefromK(head, 5);
+    head = DeletefromVal(head, 11);
     traverseLL(head);
 }
