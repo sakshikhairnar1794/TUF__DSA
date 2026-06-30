@@ -1,6 +1,6 @@
 // Print second largest element in an array
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int secondlargest(int a[], int n)

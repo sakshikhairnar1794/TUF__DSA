@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/ドキュメント/TUF__DSA/4BinarySearch/1_BS_On_1D_Arrays/BS-12",
-      "program": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/ドキュメント/TUF__DSA/4BinarySearch/1_BS_On_1D_Arrays/BS-12/build/Debug/outDebug",
+      "cwd": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/ドキュメント/TUF__DSA/1LearnTheBasics/Lec3",
+      "program": "c:/Users/SAKSHI  KHAIRNAR/OneDrive/Desktop/ドキュメント/TUF__DSA/1LearnTheBasics/Lec3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
