@@ -1,0 +1,53 @@
+One-Liners (Bit Manipulation)
+
+1) Swapping Two Numbers (Using XOR)
+   Num1 = (Num1 ^ Num2);
+   Num2 = (Num1 ^ Num2);
+   Num1 = (Num1 ^ Num2);
+
+2) Check if i-th Bit is Set or Not
+   if ((Num & (1 << i)) != 0) {
+       cout << "SET";
+   } else {
+       cout << "NOT SET";
+   }
+
+3) Set the i-th Bit
+   Num = (Num | (1 << i));
+
+4) Clear the i-th Bit
+   Num = (Num & (~(1 << i)));
+
+5) Toggle the i-th Bit
+   Num = (Num ^ (1 << i));
+
+6) Remove the Last Set Bit (Rightmost Set Bit)
+   Num = (Num & (Num - 1));
+
+7) Check if Number is a Power of 2
+   if (Num > 0 && (Num & (Num - 1)) == 0) {
+       cout << "Power of 2";
+   } else {
+       cout << "Not a Power of 2";
+   }
+
+8) Check if Number is Odd or Even
+   if ((Num & 1) == 1) {
+       cout << "Odd";
+   } else {
+       cout << "Even";
+   }
+
+9) Divide a Number by 2
+   Num = (Num >> 1);
+
+10) Count Number of Set Bits (C++)
+    int ans = __builtin_popcount(Num);
+
+11) Count Number of Set Bits (Any Language - Brian Kernighan's Algorithm)
+    int count = 0;
+    while (Num != 0) {
+        Num = (Num & (Num - 1));
+        count++;
+    }
+    return count;
